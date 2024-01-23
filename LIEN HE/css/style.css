@@ -1,0 +1,247 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*Phần css cơ bản*/
+*{ scroll-behavior: smooth}
+* {box-sizing: border-box}
+.col-1 { width: 8.333333%}
+.col-2 { width: 16.66%}
+.col-3 { width: 25%}
+.col-4 { width: 33.33333%}
+.col-5{ width: 41.66%}
+.col-6 { width: 50%}.col-7 { width: 58.33%}
+.col-8 { width: 66.66%}
+.col-9 { width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12 { width: 100%}
+.container { width: 80%; margin: auto}
+[class*="col-"]
+
+{
+/*	border: 1px solid red;*/
+	padding:15px
+}
+
+.image-100 { width: 100%; height: auto}
+.row { display: flex; flex-wrap: wrap}
+.text-left { text-align: left}
+.text-center { text-align: center}
+.text-right{ text-align: right}
+/* -- align là căn ngang ----*/
+.align-items-center { align-items: center}
+.align-items-top { align-items:flex-start}
+.align-items-bottom { align-items:flex-end}
+/* -- justify là căn đều ----*/
+.justify-center{ justify-content: center}
+.justify-start{ justify-content: flex-start}
+.justify-end{ justify-content: flex-end}
+.justify-between {justify-content: space-between}
+.justify-arround {justify-content: space-around}
+
+.text-left { text-align: left}
+.text-center { text-align: center}
+.text-right{ text-align: right}
+
+
+/*CSS CHỈNH SỬA LẠI*/
+body {
+	background-color: #FBFCFF;
+	color:  #666666;
+	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+}
+
+h1, h2, h3 {
+	color: #041A45;
+}
+
+h1{font-size: 60px;}
+h2{font-size: 40px;}
+h3{font-size: 24px;}
+h4{font-size: 19px;}
+
+p{ 
+	line-height: 1.5rem;
+	margin: 20px 0px;
+}
+
+section {padding-top: 90px;}
+
+nav {
+	display: flex;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left:0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: white;
+	box-shadow: 0px 2px 10px rgba(0,0,100,0.2);
+	z-index: 9999;
+}
+
+nav .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav .container a span {
+	color: #222222;
+}
+
+nav .container a span:hover {
+	color: #BE1E4C;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul li a {
+	padding: 20px;
+	text-decoration: none;
+	color: #30271C;
+	font-weight: bold;
+	font-size:1.2rem;
+	justify-content: center;
+}
+
+.menu ul li a:hover {
+	color: #BE1E4C;
+}
+
+.btn-primary {
+	display: inline-block;
+	color: #fff;
+	background-color: #BE1E4C;
+	padding: 14px 35px;
+	text-decoration: none;
+	border: none;
+}
+
+.btn-primary:hover {
+	background-color: #FFF;
+	color: #30271C;
+}
+
+hr {
+	width: 120px;
+	border-color: #BE1E4C;
+	border-bottom-width: 1.5px;
+}
+
+ #bannerlienhe {
+	background-image: url( "../../images/nen.jpg");
+	background-repeat: no-repeat;
+	background-position:center; 
+	background-size: cover;
+	color: #fff;
+	margin-top: 50px;
+	line-height: 340px;
+}
+
+#lienhevoichungtoi {
+	line-height: 1.5em;
+}
+
+#lienhevoichungtoi form input {
+	width: 100%;
+    margin: 15px 0px;
+    padding: 10px 20px;
+	font-size: 18px;
+/*    border: 2px solid*/
+}
+
+#lienhevoichungtoi form .loinhancuaban textarea {
+	width: 100%;
+    margin: 15px 0px;
+    padding: 10px 20px;
+	font-size: 18px;
+	min-height: 150px;
+}
+
+#lienhevoichungtoi form .gui input {
+	width: 30%;
+    margin: 20px 180px;
+    padding: 15px 10px;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #BE1E4C;
+	color: #fff;
+	border: none;
+}
+
+#lienhevoichungtoi form .gui input:hover {
+	background-color: #222222;
+	transition: all 0.3s;
+}
+
+#lienhevoichungtoi .container .dienthongtin {padding: 0px 30px}
+
+#lienhevoichungtoi .container .dienthongtin h4 {
+	color: #BE1E4C;
+}
+
+#lienhevoichungtoi .container .dienthongtin h4 span {
+	color: #666666;
+}
+
+#lienhevoichungtoi .container .dienthongtin a {
+	text-decoration: none;
+	color: #666666;
+}
+
+a {
+	transition: all 0.5s;
+}
+
+
+
+
+#footer  {
+	background-color: #212120; 
+}
+
+#footer .container img { filter: brightness(0) invert(1);}
+
+#footer .container h4 {
+	color: #FFF;
+}
+
+ .lienketnhanh ul li {list-style: none;}
+.lienketnhanh ul li a {font-style: italic;}
+
+#footer .container ul li  {
+	font-size: 14px;
+	color: #ACACAC;
+}
+
+#footer .container ul li a {
+	text-decoration: none;
+	color: #BE1E4C;
+}
+
+.lienketnhanh ul li a {
+	font-size: 18px;
+	list-style: none;
+}
+
+#muiten a {
+	color: white;
+	margin: 10px 10px;
+}
+
+#muiten a:hover {
+	background-color: #BE1E4C;
+	padding: 10px 10px;
+}
